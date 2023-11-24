@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find a Store - Coffee Shop</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+        
+    <!-- My own css && js -->
+    <script src="./js/findStore.js" defer></script>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/findStore.css" />
+    <link rel="stylesheet" href="./css/shop.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="navbar-logo" href="./index.html">
+          <img
+            src="https://logosmarcas.net/wp-content/uploads/2020/09/Starbucks-Logo.png"
+            alt="Logo"
+            width="100"
+            height="55"
+          />
+        </a>
+        <section class="navbar-list">
+          <ul>
+            <li>
+              <a href="./index.html">Menu</a>
+            </li>
+            <li>
+              <a href="./shop.html">Shop</a>
+            </li>
+            <li>
+              <a href="#">Rewards</a>
+            </li>
+            <li>
+              <a href="./findStore.html">Find a Store</a>
+            </li>
+            <li>
+              <a href="#">Account</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <main class="mapIdSection">
+        <h1>Stabucks closest to you!</h1>
+        <section id="mapSection">
+          <div id="map"></div>
+        </section>
+      </main>
+      <footer>
+        <article>
+          <a href="github.com/marccelo125">@Marcelo</a> | 
+          <a href="#">Repositório</a>
+          <a href="https://www.starbucks.com.br/">@Starbucks</a>
+        </p></article>
+      </footer>
+  </body>
+</html>
