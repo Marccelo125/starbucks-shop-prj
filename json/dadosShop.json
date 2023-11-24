@@ -1,0 +1,75 @@
+[
+  {
+    "id": "Cappucino",
+    "img": "https://cdn0.tudoreceitas.com/pt/posts/7/7/0/cappuccino_funcional_3077_orig.jpg",
+    "features":
+    {
+      "type": "hot",
+      "origin": "kenya",
+      "organic": "yes",
+      "roast": "dark",
+      "price": "12"
+    }
+  },
+  {
+    "id": "Cold brew",
+    "img": "https://www.plantte.com/wp-content/uploads/2021/11/cold-brew.jpg",
+    "features":
+    {
+      "type": "cold",
+      "origin": "brazil",
+      "organic": "yes",
+      "roast": "light",
+        "price": "18"
+      }
+    },
+    {
+      "id": "Iced mocha",
+      "img": "https://bakingmischief.com/wp-content/uploads/2019/05/iced-mocha-image-square.jpg",
+      "features": 
+      {
+        "type": "cold",
+        "origin": "ethiopia",
+        "organic": "no",
+        "roast": "light",
+        "price": "16"
+      }
+    },
+    {
+      "id": "Latte",
+      "img": "https://coffeebros.com/cdn/shop/articles/latte-vs-flat-white-all-differences-explained.jpg?v=1676581028",
+      "features":
+      {
+        "type": "hot",
+        "origin": "brazil",
+        "organic": "no",
+        "roast": "dark",
+        "price": "10"
+      }
+  },
+  {
+    "id": "Espresso",
+    "img": "https://blogstudio.s3.theshoppad.net/coffeeheroau/ec178d83e5f597b162cda1e60cb64194.jpg",
+    "features": 
+    {
+      "type": "hot",
+      "origin": "italia",
+      "organic": "noyes",
+      "roast": "dark",
+      "price": "15"
+    }
+  },
+  {
+    "id": "Frappuccino",
+    "img": "https://www.acasaencantada.com.br/wp-content/uploads/2021/04/Sbux_Horchata_Frappuccino_KnockOut.jpg",
+    "features": 
+      {
+        "type": "cold",
+        "origin": "chipre",
+        "organic": "no",
+        "roast": "light",
+        "price": "25"
+      }
+  }
+  
+]

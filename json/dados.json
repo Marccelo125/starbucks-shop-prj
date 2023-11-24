@@ -1,0 +1,39 @@
+[
+  {
+    "id": "125",
+    "name": "Marcelo Duarte",
+    "email": "marcelo@gmail.com",
+    "password": "12345",
+    "wallet": [
+      {
+        "money": "350",
+        "points": "880"
+      }
+    ],
+    "cart" : []
+  },
+  {
+    "id": "18",
+    "name": "Pedro da Silva",
+    "email": "pedro@gmail.com",
+    "password": "54321",
+    "wallet": [
+      {
+        "money": "120",
+        "points": "300"
+      }
+    ]
+  },
+  {
+    "id": "987",
+    "name": "Julia Patricia",
+    "email": "julia@gmail.com",
+    "password": "2389",
+    "wallet": [
+      {
+        "money": "550",
+        "points": "1100"
+      }
+    ]
+  }
+]
