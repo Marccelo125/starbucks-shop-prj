@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&family=Montserrat&family=Nunito+Sans:opsz@6..12&family=Open+Sans&family=Oswald&family=Prompt&family=Raleway&family=Roboto&family=Work+Sans&display=swap');
+
+:root {
+    /* Tons verdes */
+    --main-green: rgb(36, 127, 84);
+    --second-green: rgb(80, 168, 110);
+    --berylline-green: rgb(148, 210, 155);
+    --light-green: rgb(221, 245, 195);
+
+    /* Marrons */
+    --light-brown: rgb(255, 240, 201);
+    --berylline-brown: rgb(248, 221, 168);
+    --second-brown: rgb(243, 192, 120);
+    --main-brown: rgb(197, 134, 75);
+
+    /* Outros tons */
+    --grey: rgb(240, 240, 240);
+    --white-grey: rgb(245, 245, 245);
+    --shop-menu-color: #ffffff;
+
+    /* Cores STARBUCKS */
+    --colorGreenStarbucks: #006241;
+    --colorGreenAccent: #00754a;
+    --colorGreenLight: #d4e9e2;
+    --colorHouseGreen: #1e3932;
+    --colorGold: #cba258;
+    --colorGoldLight: #dfc49d;
+    --colorGoldLightest: #faf6ee;
+    --colorNeutralCool: #f9f9f9;
+    --colorNeutralWarm: #f2f0eb;
+    --colorCeramic: #edebe9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5% 1.5%;
+}
+
+main {
+    background-color: var(--grey);
+}
+
+strong {
+    color: var(--colorGreenStarbucks);
+    font-size: 115%;
+}
+
+.navbar-logo {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-list li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navbar a {
+    color: black;
+    font-size: 105%;
+    color: #000;
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar-list a::before {
+    background: var(--berylline-green);
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.navbar a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.img-header {
+    display: flex;
+}
+
+.img-header img {
+    max-height: 300%;
+    max-width: 300%;
+    min-width: 65%;
+    min-height: 65%;
+    margin-left: 16%;
+}
+
+.tx-cabecalho {
+    margin: 13% 5% 1% 4%;
+    font-size: 300%;
+}
+
+.tx-cabecalho p {
+    width: 250%;
+}
+
+.page-roll {
+    color: var(--colorCeramic);
+    background-color: var(--colorGreenStarbucks);
+}
+
+.tx-page-roll {
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+    font-style: oblique;
+}
+
+.header-newsletter {
+    text-align: center;
+    font-size: 250%;
+    margin: 3% 20%;
+    border-bottom: 3px var(--second-green) solid;
+    font-family: 'Merriweather', serif;
+}
+
+.newsletter {
+    margin: 0% 27%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.newsletter p {
+    background-color: var(--colorGreenLight);
+    color: var(--colorHouseGreen);
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 10%;
+    text-align: left;
+    font-size: 110%;
+}
+
+.newsletter img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#about-header {
+    background-color: var(--colorHouseGreen);
+    color: var(--colorNeutralCool);
+    font-family: 'Prompt', sans-serif;
+    padding: 1%;
+    text-align: center;
+    font-size: 220%;
+    margin: 2% 27%;
+}
+
+.about-us {
+    margin: 0 27%;
+}
+
+.tx-about-us {
+    background-color: var(--colorGreenLight);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: medium;
+    padding: 5%;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.image-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.image-bottom img {
+    width: 48vh;
+    height: 30vh;
+    margin-bottom: 2rem;
+    margin-right: 15px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--main-green);
+    padding: 1.2rem;
+}
+footer a {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--white-grey);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

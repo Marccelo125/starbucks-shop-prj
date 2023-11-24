@@ -1,0 +1,25 @@
+main {
+    background-color: var(--grey);
+}
+
+.mapIdSection h1 {
+    padding: 5%;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    font-size: 350%;
+    color: var(--colorGreenAccent);
+    background: var(--colorGreenLight);
+}
+
+#mapSection {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#map { 
+    padding: 15%;
+    margin: 5%;
+    height: 110px; 
+    width: 50%;
+}
