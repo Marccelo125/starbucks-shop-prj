@@ -1,4 +1,5 @@
-# ☕[Starbucks - Project](https://github.com/Marccelo125/starbucks-shop-prj) 🐲
+# ☕[Starbucks - Project](https://marccelo125.github.io/starbucks-shop-prj/) 🐲
+#### GitHub Pages: https://marccelo125.github.io/starbucks-shop-prj/
 
 > [!IMPORTANT]
 > Este repositório contém todos os meus exercícios e atividades realizadas durante o módulo `Front end do 3000 Talentos TI.`</br>
