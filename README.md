@@ -5,7 +5,7 @@
 > Este repositório contém todos os meus exercícios e atividades realizadas durante o módulo `Front end do 3000 Talentos TI.`</br>
 
 > [!Tip]
->Projeto que visa estudo do design e estrutura de >um site inspirado em `©Starbucks` todos os direitos reservados
+>Projeto que visa estudo do design e estrutura de um site inspirado em `©Starbucks` todos os direitos reservados
 
 ![starbucks-prj-print1](https://github.com/Marccelo125/starbucks-shop-prj/assets/127633664/df05de1d-b189-4e2e-a5ba-f8948d18d672)
 ![starbucks-prj-print2](https://github.com/Marccelo125/starbucks-shop-prj/assets/127633664/3431a860-e614-472c-8d27-f9001ebbe580)
@@ -18,7 +18,7 @@
     - Semântica
     - Estrutura HTML
     - Formatação de Textos
-    - 
+    - HTML DOM
 - CSS
     - APIs de Estilização
     - Utilização de Grid
