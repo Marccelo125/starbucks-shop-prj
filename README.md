@@ -2,17 +2,17 @@
 #### GitHub Pages: https://marccelo125.github.io/starbucks-shop-prj/
 
 > [!IMPORTANT]
-> Este repositório contém todos os meus exercícios e atividades realizadas durante o módulo `Front end do 3000 Talentos TI.`</br>
+> Este repositório contém todo o meu conhecimento adquirido durante durante o módulo `Front End do curso 3000 Talentos TI.`</br>
 
 > [!Tip]
->Projeto que visa estudo do design e estrutura de um site inspirado em `©Starbucks` todos os direitos reservados
+>Projeto que visa estudo do design, código e estrutura de um site inspirado em `©Starbucks` todos os direitos reservados
 
 ![starbucks-prj-print1](https://github.com/Marccelo125/starbucks-shop-prj/assets/127633664/df05de1d-b189-4e2e-a5ba-f8948d18d672)
 ![starbucks-prj-print2](https://github.com/Marccelo125/starbucks-shop-prj/assets/127633664/3431a860-e614-472c-8d27-f9001ebbe580)
 ![starbucks-prj-print3](https://github.com/Marccelo125/starbucks-shop-prj/assets/127633664/30f91be0-0219-47d7-8772-475b50499be9)
 
 ### Linguagens Utilizadas <br />
-##### Última Atualização: 24/11/2023
+##### Última Atualização: 22/01/2024
 - HTML5
     - Tags
     - Semântica
