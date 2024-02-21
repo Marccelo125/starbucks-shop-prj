@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&family=Montserrat&family=Nunito+Sans:opsz@6..12&family=Open+Sans&family=Oswald&family=Prompt&family=Raleway&family=Roboto&family=Work+Sans&display=swap");
+
+:root {
+    /* Tons verdes */
+    --main-green: rgb(36, 127, 84);
+    --second-green: rgb(80, 168, 110);
+    --berylline-green: rgb(148, 210, 155);
+    --light-green: rgb(221, 245, 195);
+
+    /* Marrons */
+    --light-brown: rgb(255, 240, 201);
+    --berylline-brown: rgb(248, 221, 168);
+    --second-brown: rgb(243, 192, 120);
+    --main-brown: rgb(197, 134, 75);
+
+    /* Outros tons */
+    --grey: rgb(240, 240, 240);
+    --white-grey: rgb(245, 245, 245);
+    --shop-menu-color: #ffffff;
+
+    /* Cores STARBUCKS */
+    --colorGreenStarbucks: #006241;
+    --colorGreenAccent: #00754a;
+    --colorGreenLight: #d4e9e2;
+    --colorHouseGreen: #1e3932;
+    --colorGold: #cba258;
+    --colorGoldLight: #dfc49d;
+    --colorGoldLightest: #faf6ee;
+    --colorNeutralCool: #f9f9f9;
+    --colorNeutralWarm: #f2f0eb;
+    --colorCeramic: #edebe9;
+}
+
+header nav {
+    background-color: var(--grey);
+}
+
+.down-header {
+    background: var(--colorGreenStarbucks);
+}
+
+.main-cards-text {
+    background-color: var(--colorGreenLight);
+}
+
+.secondary-title {
+    border-bottom: 2px solid;
+    border-color: var(--colorGreenAccent);
+}
+
+.about-us {
+    background-color: var(--colorGreenStarbucks);
+}
+
+strong {
+    color: var(--colorGreenStarbucks);
+}
+
+.nav-item:hover {
+    background-color: var(--colorGreenLight);
+    border: 0px solid;
+    border-radius: 8px;
+    transition: all 0.1s;
+}
+
+footer .nav-item:hover {
+    background-color: rgb(83, 82, 92);
+}
+
+@media (min-width: 1024px) {
+    .text-main-cards {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .text-main-cards {
+        font-size: 1.2rem;
+    }
+    .middle-card {
+        flex-direction: column-reverse;
+    }
+}
