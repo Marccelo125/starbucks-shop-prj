@@ -4,110 +4,316 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Coffee Shop</title>
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/originals/f0/2d/b9/f02db9059e235254942092d3859d7307.png">
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://i.pinimg.com/originals/f0/2d/b9/f02db9059e235254942092d3859d7307.png"
+    />
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <a class="navbar-logo" href="./index.html">
+      <nav class="navbar navbar-expand-md navbar-expand-lg sticky-top bg-body-tertiary d-none d-md-flex d-lg-flex">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
             <img
-          src="https://logosmarcas.net/wp-content/uploads/2020/09/Starbucks-Logo.png"
-          alt="Logo"
-          width="100"
-          height="55"
-          />
-      </a>
-      <section class="navbar-list">
-          <ul>
-            <li>
-                <a href="./index.html">Menu</a>
-            </li>
-            <li>
-                <a href="./shop.html">Shop</a>
-            </li>
-            <li>
-                <a href="#">Rewards</a>
+              src="https://logosmarcas.net/wp-content/uploads/2020/09/Starbucks-Logo.png"
+              alt="Starbucks"
+              width="100"
+              height="55"
+              class="img-fluid"
+            />
+            Starbucks
+          </a>
+          <div
+            class="collapse navbar-collapse d-flex justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav mb-md-2">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
               </li>
-              <li>
-                  <a href="./findStore.html">Find a Store</a>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./shop.html"
+                  >Shop</a
+                >
               </li>
-              <li>
-                  <a href="#">Account</a>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Rewards</a
+                >
               </li>
-          </ul>
-      </section>
-  </nav>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./findStore.html"
+                  >Find a store</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Account</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="navbar sticky-top bg-body-tertiary d-md-none d-lg-none">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://logosmarcas.net/wp-content/uploads/2020/09/Starbucks-Logo.png"
+              alt="Starbucks"
+              width="70"
+              height="55"
+              class="img-fluid"
+            />
+            Starbucks
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fs-1" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-5">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./shop.html"
+                    >Shop</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Rewards</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./findStore.html"
+                    >Find a store</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Account</a
+                  >
+                </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
+
     <main>
-      <header class="img-header">
-        <article class="tx-cabecalho">
-          <p>Smooth out your day,</p>
-          <p>everyday</p>
-        </article>
-        <img
-        src="https://ilos.com.br/wp-content/uploads/Starbucks-reformula%C3%A7%C3%A3o-do-supply-chain-blog-ILOS_v2.jpg"
-        alt=""
-        />
-      </header>
-      <section class="page-roll">
-        <article class="tx-page-roll">
-          <p>"Continue exploring ideas, innovating and sharing knowledge"</p>
-        </article>
-      </section>
-      <section>
-        <header class="header-newsletter">
-          <p>Some of our history</p>
-        </header>
-        <article class="newsletter">
-          <p>
-            <strong>"Your Perfect Sanctuary"</strong> - Starbucks is more than just a coffee shop. It's a place where you can relax, recharge, and find your sanctuary amidst the chaos of everyday life.
-          </p>
-          <img 
-          src="https://142088287.cdn6.editmysite.com/uploads/1/4/2/0/142088287/s821712270459666897_c2_i3_w3575.jpeg?width=2400&optimize=medium" 
-          alt=""
-          />
-        </article>
-        <article class="newsletter">
-          <img 
-          src="https://www.thebossykitchen.com/wp-content/uploads/2018/02/Turkish-Coffee-square-picture0-e1693058128803.jpg" 
-          alt=""
-          />
-          <p>
-            <strong>"Discover the Art of Coffee"</strong> - At Starbucks, we believe that coffee is an art form. From our expertly crafted beverages to our hand-selected beans, we strive to deliver a truly exceptional coffee experience.
-          </p>
-        </article>
-        <article class="newsletter">
-          <p>
-            <strong>"Coffee that Cares"</strong> - At Starbucks, we are committed to making a positive impact on the communities we serve. Through our ethical sourcing practices, community outreach programs, and dedication to sustainability, we strive to create a better world.
-          </p>
-          <img 
-          src="https://img.freepik.com/premium-photo/international-coffee-day_847512-120.jpg" 
-          alt=""
-          />
-        </article>
-      </section>
-      <section>
-        <header>
-          <h1 id="about-header">About us</h1>
-        </header>
-        <article class="about-us">
-          <p class="tx-about-us">
-            Founded in 1971, <strong>Starbucks</strong> originated in Seattle, Washington, as a single store selling high-quality coffee beans. It has since evolved into a global coffeehouse chain, known for its commitment to premium coffee, iconic mermaid logo, and creating a unique <strong>community experience</strong>. Today, Starbucks is a symbol of international coffee culture with thousands of stores <strong>worldwide</strong>.
-          </p>
-          <article class="image-bottom">
-            <img src="https://assets-global.website-files.com/628d47631ab594280248e277/62d7e3bba751a9cda31e96c5_starbucks-hero.jpg" alt="">
-            <img src="https://www.worldcoffeeportal.com/getattachment/c7db33e1-8a81-4266-b980-ddc91907df5b/RM-Amsterdam-Bank-6360-1-(1).jpg.aspx?lang=en-GB&width=700&height=479" alt="">
-          </article>
-        </article>
-      </section>
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-12 col-md-4 d-flex justify-content-center align-items-center fs-1"
+          >
+            <article>
+              <p>Smooth out your day, <br />everyday</p>
+            </article>
+          </div>
+          <div class="col-12 col-md-8 p-0">
+            <img
+              src="https://ilos.com.br/wp-content/uploads/Starbucks-reformula%C3%A7%C3%A3o-do-supply-chain-blog-ILOS_v2.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div class="row down-header">
+          <div class="col text-center text-white fst-italic p-4 fs-5">
+            "Continue exploring ideas, innovating and sharing knowledge"
+          </div>
+        </div>
+      </div>
+
+      <div id="carouselExampleIndicators" class="carousel slide m-5">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://assets.grab.com/wp-content/uploads/sites/4/2023/07/11145908/GrabAds_CaseStudy_Starbucks-Stamp-Card_Web_Masthead_1920x809.jpg" class="d-block img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://where2lifestylemagazine.com/wp-content/uploads/2021/11/TikTok-Drink-Web-Banner_1920x800.png" class="d-block img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./src/assets/images/img-03.png" class="d-block img-fluid" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="d-flex justify-content-center my-4 fs-1 fw-bold">
+        <p class="secondary-title">Some of our history</p>
+      </div>
+
+      <div class="container-fluid 100-vh">
+
+        <div class="row my-sm-4 my-md-0 my-lg-0 px-5 px-md-0 px-lg-0">
+          <div class="col-12 col-md-4 offset-md-2 d-flex align-items-center p-0 main-cards-text">
+            <p class="text-main-cards text-center p-3">
+              <strong>"Your Perfect Sanctuary"</strong> - Starbucks is more than
+              just a coffee shop. It's a place where you can relax, recharge,
+              and find your sanctuary amidst the chaos of everyday life.
+            </p>
+          </div>
+          <div class="col-12 col-md-4 p-0">
+            <img
+              src="https://142088287.cdn6.editmysite.com/uploads/1/4/2/0/142088287/s821712270459666897_c2_i3_w3575.jpeg?width=2400&optimize=medium"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+
+        <div class="middle-card row my-sm-4 my-md-0 my-lg-0 px-5 px-md-0 px-lg-0">
+          <div class="col-12 col-md-4 offset-md-2 p-0">
+            <img
+              src="https://www.thebossykitchen.com/wp-content/uploads/2018/02/Turkish-Coffee-square-picture0-e1693058128803.jpg"
+              alt=""
+              class="img-fluid w-100"
+            />
+          </div>
+          <div class="col-12 col-md-4 d-flex align-items-center p-0 main-cards-text">
+            <p class="text-main-cards text-center p-3">
+              <strong>"Discover the Art of Coffee"</strong> - At Starbucks, we
+              believe that coffee is an art form. From our expertly crafted
+              beverages to our hand-selected beans, we strive to deliver a truly
+              exceptional coffee experience.
+            </p>
+          </div>
+        </div>
+      
+        <div class="row my-sm-4 my-md-0 my-lg-0 px-5 px-md-0 px-lg-0">
+          <div class="col-12 col-md-4 offset-md-2 d-flex align-items-center p-0 main-cards-text">
+            <p class="text-main-cards text-center p-3">
+              <strong>"Coffee that Cares"</strong> - At Starbucks, we are
+              committed to making a positive impact on the communities we serve.
+              We strive to create a better world.
+            </p>
+          </div>
+          <div class="col-12 col-md-4 p-0">
+            <img
+              src="https://img.freepik.com/premium-photo/international-coffee-day_847512-120.jpg"
+              alt=""
+              class="img-fluid w-100"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-10 col-md-8 offset-1 offset-md-2 p-0 text-center text-white fs-2 mt-4">
+            <p class="about-us">About us</p>
+          </div>
+          <div class="col-10 col-md-8 offset-1 offset-md-2 p-0 mt-2">
+            <p class="main-cards-text p-4 fs-5">
+              Founded in 1971, <strong>Starbucks</strong> originated in Seattle, Washington, as a single store selling high-quality coffee beans. It has since evolved into a global coffeehouse chain, known for its commitment to premium coffee, iconic mermaid logo, and creating a unique <strong>community experience</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </main>
-    <footer>
-      <article>
-        <a href="https://github.com/marccelo125">@Marcelo</a> | 
-        <a href="https://github.com/Marccelo125/starbucks-shop-prj">Repositório</a>
-        <a href="https://www.starbucks.com.br/">@Starbucks</a>
-      </article>
-    </footer>
+
+      <div class="container-fluid bg-dark" style="color: var(--main-green);">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top">
+          <div class="col mb-3">
+            <a href="./index.html" class="bi me-2">
+              <img
+              src="https://logosmarcas.net/wp-content/uploads/2020/09/Starbucks-Logo.png"
+              alt="Starbucks"
+              width="80"
+              height="80"
+              class="img-fluid"
+            />
+          </a>
+            <p class="text-light-emphasis">© 2023</p>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Navegation</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-1 text-light">Home</a></li>
+              <li class="nav-item mb-2"><a href="./findStore.html" class="nav-link p-1 text-light">Find a Store</a></li>
+              <li class="nav-item mb-2"><a href="./shop.html" class="nav-link p-1 text-light">Shop</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Contact dev</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="https://www.linkedin.com/in/marcelo-duarte1/" class="nav-link p-1 text-light" target="_blank">Linkedin</a></li>
+              <li class="nav-item mb-2"><a href="mailto:contato.marccelo125@gmail.com" class="nav-link p-1 text-light" target="_blank">Gmail</a></li>
+              <li class="nav-item mb-2"><a href="https://api.whatsapp.com/send?phone=5551999995918" class="nav-link p-1 text-light" target="_blank">Whatsapp</a></li>
+              <li class="nav-item mb-2"><a href="https://discord.com/channels/@marccelo125" class="nav-link p-1 text-light" target="_blank">Discord</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>About</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="https://github.com/marccelo125" class="nav-link p-1 text-light" target="_blank">Github</a></li>
+              <li class="nav-item mb-2"><a href="https://github.com/Marccelo125/starbucks-shop-prj" class="nav-link p-1 text-light" target="_blank">Repository</a></li>
+              <li class="nav-item mb-2"><a href="https://www.starbucks.com/" class="nav-link p-1 text-light" target="_blank">©Starbucks site</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+      
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -4,7 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find a Store - Coffee Shop</title>
-    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/originals/f0/2d/b9/f02db9059e235254942092d3859d7307.png">
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://i.pinimg.com/originals/f0/2d/b9/f02db9059e235254942092d3859d7307.png"
+    />    
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""/>
@@ -15,55 +27,187 @@
     crossorigin=""></script>
         
     <!-- My own css && js -->
-    <script src="./js/findStore.js" defer></script>
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/findStore.css" />
-    <link rel="stylesheet" href="./css/shop.css" />
+    <script src="./src/js/index.js" defer></script>
+    <script src="./src/js/findStore.js" defer></script>
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="stylesheet" href="./src/css/findStore.css" />
+    <link rel="stylesheet" href="./src/css/shop.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <a class="navbar-logo" href="./index.html">
-          <img
-            src="https://logosmarcas.net/wp-content/uploads/2020/09/Starbucks-Logo.png"
-            alt="Logo"
-            width="100"
-            height="55"
-          />
-        </a>
-        <section class="navbar-list">
-          <ul>
-            <li>
-              <a href="./index.html">Menu</a>
-            </li>
-            <li>
-              <a href="./shop.html">Shop</a>
-            </li>
-            <li>
-              <a href="#">Rewards</a>
-            </li>
-            <li>
-              <a href="./findStore.html">Find a Store</a>
-            </li>
-            <li>
-              <a href="#">Account</a>
-            </li>
-          </ul>
-        </section>
+      <nav class="navbar navbar-expand-md navbar-expand-lg sticky-top bg-body-tertiary d-none d-md-flex d-lg-flex">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://logosmarcas.net/wp-content/uploads/2020/09/Starbucks-Logo.png"
+              alt="Starbucks"
+              width="100"
+              height="55"
+              class="img-fluid"
+            />
+            Starbucks
+          </a>
+          <div
+            class="collapse navbar-collapse d-flex justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav mb-md-2">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./shop.html"
+                  >Shop</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Rewards</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./findStore.html"
+                  >Find a store</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Account</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="navbar sticky-top bg-body-tertiary d-md-none d-lg-none">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://logosmarcas.net/wp-content/uploads/2020/09/Starbucks-Logo.png"
+              alt="Starbucks"
+              width="70"
+              height="55"
+              class="img-fluid"
+            />
+            Starbucks
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fs-1" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-5">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./shop.html"
+                    >Shop</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Rewards</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./findStore.html"
+                    >Find a store</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Account</a
+                  >
+                </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
-    <main class="mapIdSection">
-        <h1>Stabucks closest to you!</h1>
-        <section id="mapSection">
-          <div id="map"></div>
+    
+    <main class="mapIdSection text-center">
+        <h1 class="py-4 m-0" style="color: var(--main-green);">Stabucks closest to you!</h1>
+        <section id="mapSection" class="p-md-5">
+          <div id="map" class="ratio ratio-4x3 ratio-md-16x9 ratio-lg-21x9"></div>
         </section>
-      </main>
-      <footer>
-        <article>
-          <a href="https://github.com/marccelo125">@Marcelo</a> | 
-          <a href="https://github.com/Marccelo125/starbucks-shop-prj">Repositório</a>
-          <a href="https://www.starbucks.com.br/">@Starbucks</a>
-        </article>
+    </main>
+
+    <div class="container-fluid bg-dark" style="color: var(--main-green);">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top">
+        <div class="col mb-3">
+          <a href="./index.html" class="bi me-2">
+            <img
+            src="https://logosmarcas.net/wp-content/uploads/2020/09/Starbucks-Logo.png"
+            alt="Starbucks"
+            width="80"
+            height="80"
+            class="img-fluid"
+          />
+        </a>
+          <p class="text-light-emphasis">© 2023</p>
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Navegation</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-1 text-light">Home</a></li>
+            <li class="nav-item mb-2"><a href="./findStore.html" class="nav-link p-1 text-light">Find a Store</a></li>
+            <li class="nav-item mb-2"><a href="./shop.html" class="nav-link p-1 text-light">Shop</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Contact dev</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://www.linkedin.com/in/marcelo-duarte1/" class="nav-link p-1 text-light" target="_blank">Linkedin</a></li>
+            <li class="nav-item mb-2"><a href="mailto:contato.marccelo125@gmail.com" class="nav-link p-1 text-light" target="_blank">Gmail</a></li>
+            <li class="nav-item mb-2"><a href="https://api.whatsapp.com/send?phone=5551999995918" class="nav-link p-1 text-light" target="_blank">Whatsapp</a></li>
+            <li class="nav-item mb-2"><a href="https://discord.com/channels/@marccelo125" class="nav-link p-1 text-light" target="_blank">Discord</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3">
+          <h5>About</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://github.com/marccelo125" class="nav-link p-1 text-light" target="_blank">Github</a></li>
+            <li class="nav-item mb-2"><a href="https://github.com/Marccelo125/starbucks-shop-prj" class="nav-link p-1 text-light" target="_blank">Repository</a></li>
+            <li class="nav-item mb-2"><a href="https://www.starbucks.com/" class="nav-link p-1 text-light" target="_blank">©Starbucks site</a></li>
+          </ul>
+        </div>
       </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
